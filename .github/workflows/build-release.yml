@@ -12,6 +12,7 @@ jobs:
     outputs:
       version: ${{ steps.extract_version.outputs.version }}
     strategy:
+      fail-fast: true
       matrix:
         include:
           - os: ubuntu-latest
